@@ -1,0 +1,37 @@
+header
+    background: #212529
+    padding: 25px 0
+    position: fixed
+    z-index: 1
+    width: 100%
+    .header
+        display: flex
+        justify-content: space-between
+        align-items: center
+        .imgbox
+            width: 140px
+        .menu
+            a
+                font-size: 20px
+                margin: 0 18px
+                color: #ffffff
+                &:hover
+                    color: #ffc800
+        .box
+            color: #908f90
+            border: 1px solid #908f90
+            border-radius: 4px
+            font-weight: bold
+            display: none
+        .icon
+            margin-left: 5px
+    @media screen and ( max-width: 992px)
+        .header
+            .menu
+                display: none
+            .box
+                display: block
+                display: flex
+                margin-left: auto
+                width: 80px
+                padding: 10px
